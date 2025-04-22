@@ -1,29 +1,29 @@
-// Odotetaan ett‰ DOM on valmis ennen kuin lis‰t‰‰n mit‰‰n
+// Odotetaan ett√§ DOM on valmis ennen kuin lis√§t√§√§n mit√§√§n
 document.addEventListener("DOMContentLoaded", () => {
   const searchBtn = document.getElementById("searchBtn");
-  // Lis‰t‰‰n klikkaus tapahtuma dynaamisesti
+  // Lis√§t√§√§n klikkaus tapahtuma dynaamisesti
   searchBtn.addEventListener("click", searchMovies);
 });
 
-// Funktio hakee elokuvat userin syˆtteen perusteella
+// Funktio hakee elokuvat userin sy√∂tteen perusteella
 function searchMovies() {
   const query = document.getElementById("searchInput").value;
-  const apiKey = 'YOUR_API_KEY'; // Korvaa omalla TMDB API-avaimella
+  const apiKey = 'e089163b6333daf1c6334d3f6ac3c5e7'; // Korvaa omalla TMDB API-avaimella
   const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(query)}`;
 
-  // AJAX haku fetchill‰
+  // AJAX haku fetchill√§
   fetch(url)
     .then(response => response.json())
-    .then(data => showResults(data.results)) // N‰ytet‰‰n tulokset
-    .catch(error => console.error("Error:", error)); // Virheidenk‰sittely
+    .then(data => showResults(data.results)) // N√§ytet√§√§n tulokset
+    .catch(error => console.error("Error:", error)); // Virheidenk√§sittely
 }
 
-// Funktio luo kortit elokuvista ja lis‰‰ ne sivulle
+// Funktio luo kortit elokuvista ja lis√§√§ ne sivulle
 function showResults(movies) {
   const resultsDiv = document.getElementById("results");
-  resultsDiv.innerHTML = ''; // Tyhjennet‰‰n vanhat tulokset
+  resultsDiv.innerHTML = ''; // Tyhjennet√§√§n vanhat tulokset
 
-  // K‰yd‰‰n jokainen elokuva l‰pi ja luodaan kortti
+  // K√§yd√§√§n jokainen elokuva l√§pi ja luodaan kortti
   movies.forEach(movie => {
     const card = document.createElement("div");
     card.className = "movie-card";
@@ -39,12 +39,12 @@ function showResults(movies) {
     const overview = document.createElement("p");
     overview.textContent = movie.overview;
 
-    // Lis‰t‰‰n korttiin otsikko, kuva ja kuvaus
+    // Lis√§t√§√§n korttiin otsikko, kuva ja kuvaus
     card.appendChild(title);
     card.appendChild(img);
     card.appendChild(overview);
 
-    // Lis‰t‰‰n kortti tulosalueelle
+    // Lis√§t√§√§n kortti tulosalueelle
     resultsDiv.appendChild(card);
   });
 }
