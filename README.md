@@ -3,10 +3,10 @@ Projekti 2: AJAX-sovellus REST APIa hyödyntäen
 Jesse Hinkkanen
 
 ## Demo link:
-https://stunning-horse-b9c3de.netlify.app/
+
 
 ## How was the workload divided
-Projekti tehtiin yksin
+Projekti tehtiin yksin, mutta tuli kyllä kysyttyä apua kaverilta (kiitos Jaakko).
 
 
 
@@ -22,17 +22,18 @@ Projekti tehtiin yksin
 - [License](#license)
 
 ## About The App
-Projektin ideana oli käyttää AJAXIA, josta päädyin valitsemaan ensimmäisen vaihtoehdon (movie database). Appi hakee hakusanan avulla listan elokuvista, jossa käytin Open Movie DB:tä koska halusin apin sisältävän isomman määrän elokuvia joita hakea.
+Projektin ideana oli käyttää AJAXIA, josta päädyin valitsemaan ensimmäisen vaihtoehdon (movie database). Appi hakee hakusanan avulla listan elokuvista, jossa käytin Open Movie DB:tä koska halusin apin sisältävän isomman määrän elokuvia joita hakea. Tämän lisäksi laitettiin lista Finnkinon teattereista, mitä elokuvia kyseisissä teattereissa näytetään ja minä päivänä.
 
 ## Screenshots
-https://i.gyazo.com/56832160eb204b62cb6c2edf0b8310ed.jpg Screenshotti sivusta, kun on käytetty hakusanaa
+https://i.gyazo.com/c351f8a3c87d56b1338cb587392253e3.jpg Screenshotti sivusta, kun on valitettu teatteri, tässä esimerkissä Flamingon Finnkino.
 
 ## Technologies
 Projektissä käytettiin HTML, CSS sekä Javascriptiä
 
 ## Setup
-- Valitse hakusana, esim. Batman
-- Sivusto avaa listan elokuvista joiden nimi sisältää kyseisen hakusanan
+- Jos haluat hakea listan elokuvista, käytä hakusanaa esim. "Batman"
+- Database näyttää kaikki elokuvat joiden title sisältää kyseisen hakusanan
+- Valitsemalla teatterin, sivusto näyttää kaikki näytökset kyseiselle päivälle
 
 ## Status
 Aikalailla valmis, tuskin tarvitsee enempää "tuunaamista". Jotkut databasen elokuvat eivät toimi, mutta vika on todnäk. sivuston päässä, kuten aikaisemmassa kuvankaappauksessa näkyy, miten yksi elokuvista ei ladannut mitään infoa.
