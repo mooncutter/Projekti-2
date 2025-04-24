@@ -16,7 +16,6 @@ Projekti tehtiin yksin, mutta tuli kyllä kysyttyä apua kaverilta (kiitos Jaakk
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
-- [Approach](#approach)
 - [Status](#status)
 - [Credits](#credits)
 - [License](#license)
